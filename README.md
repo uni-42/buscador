@@ -19,7 +19,7 @@
     .logo {
       font-size: 48px;
       font-weight: bold;
-      color: #4285F4;
+      color: black;
       margin-bottom: 20px;
     }
 
@@ -40,7 +40,6 @@
       background: #f1f1f1;
       cursor: pointer;
       margin: 5px;
-      transition: 0.2s;
     }
 
     .btn:hover {
@@ -50,19 +49,19 @@
 </head>
 <body>
 
-  <div class="logo">Google</div>
+  <div class="logo">Startpage</div>
 
-  <input class="search-box" placeholder="Buscar en Google...">
+  <input class="search-box" placeholder="Buscar...">
 
   <div>
     <button class="btn" onclick="buscar()">Buscar</button>
-    <button class="btn" onclick="abrirJuego()">Voy a tener suerte 😏</button>
+    <button class="btn" onclick="abrirJuego()">Jugar 🎮</button>
   </div>
 
   <script>
     function buscar() {
       const query = document.querySelector('.search-box').value;
-      window.open('https://www.google.com/search?q=' + query, '_blank');
+      window.open('https://www.startpage.com/do/search?q=' + query, '_blank');
     }
 
     function abrirJuego() {
@@ -72,3 +71,4 @@
 
 </body>
 </html>
+
